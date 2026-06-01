@@ -16,7 +16,7 @@ The files in this portfolio are deliberately ordered by the technical complexity
 
 ### 2. 02_Professional_Resume
 * **Scope:** High-Impact Technical Resume / CV Template.
-* **Technical Highlights:** Precision margin control, customized spatial alignment, and multi-column integration condensed into a highly readable, industry-standard format.
+* **Technical Highlights:** Precision margin control, customized spatial alignment, integration condensed into a highly readable, industry-standard format.
 
 ### 3. 03_Math_Exam_Solutions
 * **Scope:** Advanced Analytical Solutions Formatting.
@@ -28,7 +28,7 @@ The files in this portfolio are deliberately ordered by the technical complexity
 
 ### 5. 05_Math_Exam_1ESO
 * **Scope:** Secondary Education Mathematical Assessment.
-* **Technical Highlights:** Prioritizes extreme visual clarity, utilizing customized geometric figures, structured response blocks, and clean, distraction-free typography designed for high readability in an educational setting.
+* **Technical Highlights:** Prioritizes extreme visual clarity, utilizing structured response blocks, and clean, distraction-free typography designed for high readability in an educational setting.
 
 ---
 *All source `.tex` files are included alongside their compiled `.pdf` versions to demonstrate the underlying code architecture, package management, and structural modularity.*

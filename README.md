@@ -2,13 +2,13 @@
 
 This repository serves as a professional showcase of advanced document structuring, mathematical typesetting, and formatting automation utilizing **LaTeX**. 
 
-It demonstrates the ability to translate highly complex analytical concepts, extensive datasets, and rigorous academic research into visually impeccable and accessible documents.
+It demonstrates the ability to translate highly complex analytical concepts, extensive datasets, and rigorous academic and educational materials into visually impeccable documents. 
 
-> **Note on Privacy:** All documents contained within this repository have been fully anonymized. Third-party names, sensitive institutional data, and personal contact information have been redacted or replaced with placeholder text to ensure strict confidentiality.
+> **Note on Privacy & Confidentiality:** The documents currently featured in this repository are entirely my original work. However, maintaining strict professional standards is a priority; therefore, in the event that any current or future documents involve third-party contributions, sensitive institutional data, or personal contact information, those details are strictly anonymized and redacted to ensure full confidentiality.
 
 ## 📂 Repository Structure & Highlights
 
-The files in this portfolio are deliberately ordered by technical complexity and structural rigor.
+The files in this portfolio are deliberately ordered by the technical complexity of their underlying source code.
 
 ### 1. 01_TFG_LISA_Simulation *(Featured)*
 * **Scope:** Gravitational Wave Research & Numerical Simulations.
@@ -18,13 +18,17 @@ The files in this portfolio are deliberately ordered by technical complexity and
 * **Scope:** High-Impact Technical Resume / CV Template.
 * **Technical Highlights:** Precision margin control, customized spatial alignment, and multi-column integration condensed into a highly readable, industry-standard format.
 
-### 3. 03_Spectroscopy_Lab_Report
-* **Scope:** Experimental Physics Laboratory Report.
-* **Technical Highlights:** Strict academic structuring, seamless integration of data tables, error analysis formatting, and experimental methodology documentation.
+### 3. 03_Math_Exam_Solutions
+* **Scope:** Advanced Analytical Solutions Formatting.
+* **Technical Highlights:** Focuses on the complex typesetting of algorithmic step-by-step mathematical resolutions, ensuring perfect alignment of equations and multi-stage analytical derivations.
 
-### 4. 04_Math_Exam_1ESO & 05_Math_Exam_Solutions
+### 4. 04_Spectroscopy_Lab_Report
+* **Scope:** Experimental Physics Laboratory Report.
+* **Technical Highlights:** Strict academic structuring, seamless integration of complex experimental data tables, error analysis formatting, and clear methodological documentation.
+
+### 5. 05_Math_Exam_1ESO
 * **Scope:** Secondary Education Mathematical Assessment.
-* **Technical Highlights:** Focuses on extreme visual clarity, utilizing customized geometric figures, algorithmic step-by-step solution blocks, and clean, distraction-free typography designed for high readability.
+* **Technical Highlights:** Prioritizes extreme visual clarity, utilizing customized geometric figures, structured response blocks, and clean, distraction-free typography designed for high readability in an educational setting.
 
 ---
-*All source `.tex` files are included alongside their compiled `.pdf` versions to demonstrate the underlying code architecture and modularity.*
+*All source `.tex` files are included alongside their compiled `.pdf` versions to demonstrate the underlying code architecture, package management, and structural modularity.*

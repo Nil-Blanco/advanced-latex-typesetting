@@ -1,0 +1,136 @@
+\documentclass[12pt, a4paper, addpoints]{exam}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace} % Paquet per l'interlineat
+\usepackage{ragged2e} % Paquet per alinear a l'esquerra correctament
+
+% Ajust dels marges per aprofitar al màxim el full A4
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+% --- ADAPTACIONS PER A DISLÈXIA ---
+% 1. Lletra de pal (sans-serif) per defecte
+\renewcommand{\familydefault}{\sfdefault}
+% 2. Fórmules matemàtiques una mica més grans
+\everymath{\displaystyle}
+
+% Traducció de la classe exam al català
+\pointpoints{punt}{punts}
+\bonuspointpoints{punt extra}{punts extra}
+\cfoot{}
+\begin{document}
+
+% Interlineat d'1.5 i alineació a l'esquerra
+\onehalfspacing
+\RaggedRight
+
+% --- CAPÇALERA DE L'EXAMEN ---
+\begin{center}
+    \fbox{\fbox{\parbox{\dimexpr\textwidth-1cm\relax}{
+    \centering
+    \vspace{0.2cm}
+    \Large \textbf{Examen de Matemàtiques - Nombres Enters} \\
+    \vspace{0.3cm}
+    \normalsize
+    \raggedright
+    \textbf{Nom i cognoms:} \makebox[7cm]{\hrulefill} \hfill \textbf{Data:} \makebox[3cm]{\hrulefill} \\
+    \vspace{0.3cm}
+    \textbf{Curs i Grup:} 1r ESO \makebox[2cm]{\hrulefill} \hfill \textbf{Qualificació:} \makebox[2cm]{\hrulefill} / \numpoints \ punts
+    \vspace{0.1cm}
+    }}}
+\end{center}
+\vspace{0.4cm}
+% -----------------------------
+
+\begin{questions}
+
+% BLOC ÚNIC DE CÀLCUL (Fusionat Ex 1 + Ex 5 + Bonus)
+\question[4] Calcula pas a pas respectant la jerarquia de les operacions. 
+\vspace{0.2cm}
+\begin{parts}
+    \part $(-3) + (-5) - (-2) =$ \vspace{1.5cm}
+    \part $(-15) : (+5) + 2 =$ \vspace{1.5cm}
+    \part $(-12) : (-4) + (-2) \cdot (+3) =$ \vspace{2cm}
+    \part $(-4) + [10 : (-2)] - (-3) \cdot 2 =$ \vspace{3.5cm}
+    \part $\left[8 - 2\right] \cdot \left[ (-2)^2 + (+5 - 6) \right] =$ \vspace{3.5cm}
+    
+    % La part extra s'integra dins del mateix exercici
+    \bonuspart[0.5] \textbf{BONUS:} $[(-5) + 8 : (4 - 2)]^{555} =$ \vspace{2.5cm}
+\end{parts}
+
+\newpage % Forcem que la resta vagi a la segona cara del full
+
+\question[1.5] Situa els números a la recta real: 
+
+$+6, \quad -3, \quad -8, \quad 0, \quad +4, \quad +10, \quad -12, \quad +2, \quad -5$.
+\vspace{3cm}
+
+\question[1.5] Marca l'opció correcta per a cada potència:
+\vspace{0.2cm}
+\begin{parts}
+    \part $(+2)^3 =$
+    \begin{oneparchoices}
+        \choice $+4$
+        \choice $+8$
+        \choice $-8$
+        \choice $-6$
+    \end{oneparchoices}
+    \vspace{0.4cm}
+
+    \part $(-3)^3 =$
+    \begin{oneparchoices}
+        \choice $+27$
+        \choice $-9$
+        \choice $-27$
+        \choice $+9$
+    \end{oneparchoices}
+    \vspace{0.4cm}
+
+    \part $(-5)^2 =$
+    \begin{oneparchoices}
+        \choice $-25$
+        \choice $-10$
+        \choice $+10$
+        \choice $+25$
+    \end{oneparchoices}
+    \vspace{0.4cm}
+
+    \part $(+3)^4 =$
+    \begin{oneparchoices}
+        \choice $+12$
+        \choice $-81$
+        \choice $+81$
+        \choice $-12$
+    \end{oneparchoices}
+    \vspace{0.4cm}
+
+    \part $(-1)^{500} =$
+    \begin{oneparchoices}
+        \choice $-1$
+        \choice $+500$
+        \choice $-500$
+        \choice $+1$
+    \end{oneparchoices}
+\end{parts}
+\vspace{0.4cm}
+
+\question[3] A les \textbf{7 del matí}, el termòmetre del pati marcava una temperatura de \textbf{$-3\,^{\circ}\mathrm{C}$}. 
+
+Al matí ha sortit el sol i a l'hora del pati (\textbf{11:30 h}) la temperatura havia \textbf{pujat $8\,^{\circ}\mathrm{C}$}. 
+
+A la tarda, ha arribat un front fred i la temperatura ha \textbf{baixat $6\,^{\circ}\mathrm{C}$}. 
+
+Finalment, durant la nit, ha tornat a \textbf{baixar $4\,^{\circ}\mathrm{C}$} més.
+
+\vspace{0.3cm}
+\begin{parts}
+    \part Quina temperatura feia a l'hora del pati? \vspace{1.8cm}
+    \part Quina temperatura marcava el termòmetre al final de la nit? \vspace{1.8cm}
+    \part Quina ha estat la temperatura més alta i més baixa durant el dia? Quina diferència de temperatura hi ha entre la més alta i la més baixa? \vspace{2.5cm}
+\end{parts}
+
+\end{questions}
+\end{document}

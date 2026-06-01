@@ -1,0 +1,93 @@
+\documentclass[11pt,a4paper]{article}
+
+
+\usepackage[margin=0.65in]{geometry} 
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=teal,
+}
+
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+
+\newcommand{\cventry}[4]{
+    \noindent \textbf{#1} \hfill \textit{#2} \\
+    \noindent \textit{#3} \hfill #4 \vspace{3pt}
+}
+
+\begin{document}
+
+
+\pagestyle{empty}
+
+
+\begin{center}
+    {\Huge \textbf{Nil Blanco}}\\[6pt]
+    Barcelona, Spain $\cdot$ EU Citizen $\cdot$ +34 600 000 000 \\
+    \href{mailto:email@gmail.com}{email@gmail.com} $\cdot$ \href{https://github.com/Nil-Blanco}{https://github.com/Nil-Blanco}
+\end{center}
+
+\vspace{6pt}
+
+
+\section{Education}
+
+\cventry{Technical University of Munich (TUM)}{Munich, Germany}{Erasmus Exchange Program (BSc Physics)}{Oct 2024 -- Sep 2025}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Selected for a competitive 11-month academic exchange at one of Europe's top-tier technical universities.
+    \item Adapted to a high-performance international environment, completing advanced coursework in physical sciences.
+\end{itemize}
+\vspace{6pt}
+
+\cventry{Universitat de Barcelona (UB)}{Barcelona, Spain}{Bachelor of Science in Physics}{Sep 2021 -- Jan 2026}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Developed strong analytical and problem-solving skills through rigorous mathematical modeling and theoretical physics.
+\end{itemize}
+
+
+\section{Technical \& Research Projects}
+
+\cventry{Numerical Simulation of Gravitational Waves (LISA Mission)}{Academic Research}{Data Analysis \& Mathematical Modeling}{Nov 2025 -- Present}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Developed numerical models to simulate complex physical signals and timing residuals related to the Laser Interferometer Space Antenna (LISA).
+    \item Applied Schwarzschild-de Sitter metrics to solve advanced non-linear equations, demonstrating capacity for high-level abstract mathematical reasoning.
+    \item \textbf{Manuscript in preparation:} Currently co-authoring a comprehensive research paper based on these findings for publication in a peer-reviewed scientific journal, in collaboration with researchers from ICCUB.
+\end{itemize}
+\vspace{6pt}
+
+\cventry{Algorithmic Trading Bot Development}{Personal Project}{Quantitative Trading \& Backtesting}{May 2026 -- Present}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Programmed a custom algorithmic trading bot in Python to simulate and evaluate automated market strategies.
+    \item Developed and backtested Long/Short and Parabolic SAR trading models utilizing extensive historical market data.
+    \item Applied data analysis and statistical validation to optimize technical indicators and risk management parameters.
+\end{itemize}
+
+\section{Professional Experience}
+
+\cventry{Generalitat de Catalunya}{Catalonia, Spain}{Mathematics Educator}{Mar 2026 -- Present}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Translate complex mathematical concepts into clear, accessible frameworks for diverse audiences.
+    \item Design, structure, and format quantitative assessments and technical documentation using LaTeX.
+    \item Manage classroom dynamics and optimize learning processes, demonstrating strong communication and leadership skills.
+\end{itemize}
+
+
+\section{Skills}
+
+\begin{itemize}[leftmargin=*, nosep]
+    \item \textbf{Technical \& Programming:} Advanced LaTeX, Mathematical Modeling, Data Analysis, Numerical Simulation, Python.
+    \item \textbf{Languages:} English (Professional Working Proficiency - \textit{C1/C2 certification in progress}), Spanish (Native), Catalan (Native).
+    \item \textbf{Core Competencies:} Quantitative Analysis, Complex Problem Solving, Cross-cultural Adaptability, Self-directed Learning.
+\end{itemize}
+
+\end{document}

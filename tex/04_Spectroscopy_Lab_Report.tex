@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{float}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{geometry}
+
+\geometry{margin=2.5cm}
+
+\title{Caracterización Óptica de una Capa Fina de Óxido de Zinc (ZnO)}
+\author{Nil Blanco}
+\date{Enero de 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción y Objetivos}
+En este trabajo se pretende analizar las propiedades ópticas de una muestra de óxido de zinc (ZnO) depositada sobre vidrio. El objetivo principal es extraer parámetros físicos críticos como el espesor de la capa ($d$), su índice de refracción y el valor del bandgap energético ($E_G$) a partir de datos de transmitancia obtenidos experimentalmente.
+
+\section{Análisis de la Zona de Transparencia}
+En la región del visible, donde la energía de los fotones no es suficiente para excitar electrones a la banda de conducción, aparecen franjas de interferencia debidas a la delgadez de la capa. 
+
+Para este análisis, se ha utilizado un modelo teórico de ajuste basado en la ecuación de Sellmeier. El proceso consistió en ajustar manualmente el espesor y el índice de refracción hasta que la curva teórica coincidiera con los máximos y mínimos experimentales (Figura 1).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.75]{T(LAMBDA).png}
+    \caption{Espectro de transmitancia experimental y ajuste mediante el modelo de interferencias.}
+\end{figure}
+
+Tras las iteraciones realizadas, los parámetros correspondientes son:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Parámetro} & \textbf{Valor obtenido} \\
+\midrule
+Espesor de la capa ($d$) & $538$ nm \\
+Índice de refracción ($n_{\infty}$) & $1,82$ \\
+Longitud de onda de resonancia ($\lambda_0$) & $100$ nm \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Cálculo del Bandgap ($E_G$)}
+Al acercarnos a longitudes de onda más cortas ($370-420$ nm), la transmitancia cae drásticamente debido a la absorción del material. Para un material de gap directo como el ZnO, se cumple que $\alpha(E) \propto (E - E_G)^{1/2}$.
+
+Utilizando los datos de absorción calculados con el espesor anterior, se ha realizado un gráfico de Tauc representando $\alpha^2$ frente a la energía de la radiación incidente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{ALFA2(E).png}
+    \caption{Representación de $\alpha^2$ frente a la energía para la determinación del Gap.}
+\end{figure}
+
+Se ha seleccionado el tramo lineal de la subida para realizar una regresión, obteniendo la ecuación $$y = 1,39 \cdot 10^{10}x - 4,31 \cdot 10^{10}$$ con una correlación $R^2 = 0,9942$. Al extrapolar la recta hasta el corte con el eje de abscisas ($y=0$), se obtiene:
+$$E_G = \frac{4,31 \cdot 10^{10}}{1,39 \cdot 10^{10}} \approx 3,10 \text{ eV}$$
+
+\section{Discusión y Conclusiones}
+Los resultados obtenidos concuerdan razonablemente con la literatura. El valor del Gap ($3,10$ eV) entra dentro del margen de $3,10-3,22$ eV reportado por Ahmad \& Ahmad (2006) para capas de ZnO. Por otro lado, el índice de refracción ($1,82$) es algo más bajo que el del ZnO en estado sólido masivo ($\approx 2,0$), lo cual es normal en este tipo de depósitos, ya que las capas delgadas suelen presentar una densidad menor.
+
+\end{document}

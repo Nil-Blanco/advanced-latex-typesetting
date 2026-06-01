@@ -1,0 +1,84 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=2cm}
+
+\title{Examen de Matemàtiques Resolt - 4t ESO\\ \large Tema: Exponencials i Logaritmes}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{tabular}{ll}
+\textbf{Nom i cognoms:} \rule{8cm}{0.1pt} & \textbf{Grup:} \rule{2cm}{0.1pt} \\
+\end{tabular}
+
+\vspace{0.5cm}
+\textit{Durada aproximada: 50 minuts}
+\vspace{0.5cm}
+
+\section*{1. Definició de logaritme [2.5 Pts]}
+Troba el valor de $x$ en les igualtats següents, aplicant la definició $\log_a(b) = c \iff a^c = b$:
+
+\begin{itemize}
+    \item[a)] $\log_{2}(x)=5 \implies x = 2^5 \implies \mathbf{x = 32}$
+    \item[b)] $3^{x}=81 \implies x = \log_3(81) \implies x = 4 \implies \mathbf{x = 4}$
+    \item[c)] $\log_{x}(125)=3 \implies x^3 = 125 \implies x = \sqrt[3]{125} \implies \mathbf{x = 5}$
+    \item[d)] $10^{x}=0.0001 \implies x = \log(0.0001) \implies x = \log(10^{-4}) \implies \mathbf{x = -4}$
+    \item[e)] $2^{x+1}=1024 \implies x+1 = \log_2(1024) \implies x+1 = 10 \implies \mathbf{x = 9}$
+\end{itemize}
+
+\section*{2. Expressions [2.5 Pts]}
+Simplifica al màxim les expressions següents utilitzant les propietats de les potències:
+
+\begin{itemize}
+    \item[a)] $A \cdot \sqrt{\left(\frac{A^{2} \cdot \sqrt{A}}{\sqrt{A} \cdot A}\right)}$
+    
+    \textbf{Solució pas a pas:}
+    1. Passem totes les arrels a potències:
+    \[ A^1 \cdot \sqrt{\frac{A^2 \cdot A^{1/2}}{A^{1/2} \cdot A^1}} \]
+    2. Sumem els exponents del numerador i del denominador de la fracció interior:
+    \[ A^1 \cdot \sqrt{\frac{A^{2 + 1/2}}{A^{1/2 + 1}}} = A^1 \cdot \sqrt{\frac{A^{5/2}}{A^{3/2}}} \]
+    3. Restem els exponents (numerador menys denominador):
+    \[ A^1 \cdot \sqrt{A^{5/2 - 3/2}} = A^1 \cdot \sqrt{A^{2/2}} = A^1 \cdot \sqrt{A^1} \]
+    4. Multiplicació final sumant els exponents:
+    \[ A^1 \cdot A^{1/2} = A^{1 + 1/2} = \mathbf{A^{3/2}} \text{ o } \mathbf{\sqrt{A^3}} \]
+
+    \item[b)] $2 \log(2x) + \frac{1}{2} \log(4x^{6}) - \log(x)$
+    
+    \textbf{Solució:}
+    \[ \log((2x)^2) + \log((4x^6)^{1/2}) - \log(x) = \log(4x^2) + \log(2x^3) - \log(x) \]
+    \[ \log \left( \frac{4x^2 \cdot 2x^3}{x} \right) = \log \left( \frac{8x^5}{x} \right) = \mathbf{\log(8x^4)} \]
+\end{itemize}
+
+\section*{3. Propietats dels logaritmes [2 Pts]}
+Sabent que $\log k = 1.2$, calcula:
+
+\begin{itemize}
+    \item[a)] $\log(100 \cdot k) = \log(100) + \log(k) = 2 + 1.2 = \mathbf{3.2}$
+    \item[b)] $\log\left(\frac{k^3}{10}\right) = 3 \log(k) - \log(10) = 3(1.2) - 1 = \mathbf{2.6}$
+    \item[c)] $\log(\sqrt[4]{k}) = \frac{1}{4} \log(k) = \frac{1.2}{4} = \mathbf{0.3}$
+    \item[d)] $k = 10^{\log k} = 10^{1.2} \implies \mathbf{k \approx 15.85}$
+\end{itemize}
+
+\section*{4. Problema d'aplicació [3 Pts]}
+Població actual: $12.500$. Creixement: $3,5\%$ anual.
+
+\begin{equation}
+    100\% + 3,5\% = 103,5\% \implies\frac{103,5}{100}=1,035
+\end{equation}
+
+\begin{itemize}
+    \item[a)] $\mathbf{P(t) = 12500 \cdot 1.035^t}$
+    \item[b)] $P(8) = 12500 \cdot 1.035^8 \approx \mathbf{16460 \text{ habitants}}$
+    \item[c)] $P(-2) = 12500 \cdot 1.035^{-2} \approx \mathbf{11669 \text{ habitants}}$
+    \item[d)] $20000 = 12500 \cdot 1.035^t \implies 1.6 = 1.035^t \implies t = \frac{\log(1.6)}{\log(1.035)} \approx \mathbf{13.66 \text{ anys}}$
+\end{itemize}
+
+\end{document}
